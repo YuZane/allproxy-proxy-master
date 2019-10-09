@@ -85,10 +85,11 @@ const App = withRouter(class App extends Pure_component {
             const conn = yield ajax.json({url: '/api/conn'});
             setdb.set('head.conn', conn);
         });
-        this.etask(function*(){
-            const version = yield ajax.json({url: '/api/last_version'});
-            setdb.set('head.ver_last', version);
-        });
+        //Block version update
+        // this.etask(function*(){
+        //     const version = yield ajax.json({url: '/api/last_version'});
+        //     setdb.set('head.ver_last', version);
+        // });
         this.etask(function*(){
             const defaults = yield ajax.json({url: '/api/defaults'});
             setdb.set('head.defaults', defaults);
