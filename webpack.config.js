@@ -4,6 +4,9 @@ const webpack = require('webpack');
 const html_webpack_plugin = require('html-webpack-plugin');
 module.exports = {
     context: `${__dirname}/src/pub`,
+    devServer: {
+        inline: true
+    },
     entry: {
         app: './app.js',
         vendor: ['jquery', 'lodash', 'moment',

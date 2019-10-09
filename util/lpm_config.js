@@ -67,13 +67,13 @@ conf.server_default = {
 };
 conf.manager_default = Object
 .assign({}, _.omit(conf.server_default, 'port'), {
-    api: 'https://'+pkg.api_domain,
-    www: 22999,
+    api: 'http://localhost:9081',
+    www: 23999,
     www_whitelist_ips: [],
     whitelist_ips: [],
-    ws: 22998,
+    ws: 23998,
     dropin: true,
-    dropin_port: 22225,
+    dropin_port: 23225,
     no_usage_stats: false,
     request_stats: true,
     logs: 1000,

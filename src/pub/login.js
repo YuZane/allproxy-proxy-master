@@ -181,7 +181,7 @@ const Node_message = ({ver_node})=>{
 
 const Header = ()=>
     <div className="login_header">
-      <h3><T>Login with your Luminati account</T></h3>
+      <h3><T>Login with your Allproxy account</T></h3>
     </div>;
 
 const Form = props=>{
@@ -253,16 +253,8 @@ class First_form extends Pure_component {
         return <div className="login_form">
               <T>{t=><div>
                 <div className="row">
-                  <div className="col col_google col-sm-6">
-                    <div className="btn_google_wrapper">
-                      <a className="btn btn_lpm btn_google"
-                        onClick={google_click}>
-                        <div className="img"/>
-                        {t('Log in with Google')}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col col_pass col-sm-6">
+                   
+                  <div className="col col_pass col-sm-12">
                     <div className="form-group">
                       <label htmlFor="username">{t('Email')}</label>
                       <input type="email"
@@ -284,18 +276,6 @@ class First_form extends Pure_component {
                       onClick={this.props.save_user}>
                       {saving_user ? t('Logging in...') : t('Log in')}
                     </button>
-                  </div>
-                  <div className="or_circle">Or</div>
-                </div>
-                <div className="row">
-                  <div className="signup">
-                    {t('Don\'t have a Luminati account?')}
-                    <a href="https://luminati.io/?need_signup=1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link">
-                      {t('Sign up')}
-                    </a>
                   </div>
                 </div>
               </div>

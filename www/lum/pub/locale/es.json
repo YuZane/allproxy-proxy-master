@@ -1007,7 +1007,7 @@
   "Please upgrade your node using nvm, nave or visit": "Actualizar el nodo usando nvm, nave o visit",
   "and download a newer version.": "y descargar una nueva versión.",
   "After node upgrade you should uninstall and then reinstall this tool using:": "Después de la actualización del nodo deberá desinstalar y volver a instalar esta herramienta usando:",
-  "Login with your Luminati account": "Iniciar sesión con su cuenta de Luminati",
+  "Login with your Allproxy account": "Iniciar sesión con su cuenta de Luminati",
   "Please choose a customer.": "Seleccionar un cliente.",
   "Log in with Google": "Iniciar sesión con Google",
   "Email": "Correo electrónico",

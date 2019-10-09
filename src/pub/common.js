@@ -378,7 +378,7 @@ export class Logo extends Pure_component {
     }
     render(){
         return <div className="nav_top">
-              <a href="https://luminati.io/cp" rel="noopener noreferrer"
+              <a href="http://allproxy.io" rel="noopener noreferrer"
                 target="_blank" className="logo_big"/>
               <div className="version">V{this.state.ver}</div>
               <div className="nav_top_right">

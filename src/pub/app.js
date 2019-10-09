@@ -1,6 +1,6 @@
 // LICENSE_CODE ZON ISC
 'use strict'; /*jslint browser:true, react:true, es6:true*/
-import Pure_component from '/www/util/pub/pure_component.js';
+import Pure_component from '../../www/util/pub/pure_component.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {withRouter, Switch, BrowserRouter, Route} from 'react-router-dom';
@@ -147,7 +147,7 @@ const Old_modals = ()=>
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title">
-                Luminati Proxy Manager is upgrading</h4>
+                Allproxy Manager is upgrading</h4>
             </div>
             <div className="modal-body">
               Please wait...

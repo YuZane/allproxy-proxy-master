@@ -8,6 +8,7 @@ const node_support_ver = /^v([7-9]|[1-9][0-9])\./;
 E.is_env_compat = ()=>{
     if (!node_support_ver.test(process.version))
     {
+        console.log(`${process.version}\r\n`);
         console.log('Luminati proxy manager min requires Node.js v7\n'
             +'Please upgrade your Node using nvm or nave, or visit nodejs.org '
             +'and download a newer version.\nAfter that run the following '
