@@ -155,9 +155,9 @@
     "node": ">=10.0",
     "npm": "4.6.1"
   },
-  "homepage": "https://luminati.io/",
-  "api_domain": "lum-lpm.com",
-  "mail_domain": "luminati-china-mail.co",
+  "homepage": "http://allproxy.io/",
+  "api_domain": "allproxy.io",
+  "mail_domain": "allproxy.io",
   "keywords": [
     "luminati",
     "proxy",
