@@ -41,6 +41,13 @@ E.get_password = (proxy, zone_name, zones)=>{
         return proxy.password;
 };
 
+E.get_uname = (proxy, zone_name, zones)=>{
+    const zone = zones.find(z=>z.zone==zone_name);
+    if (zone && zone.userName)
+        return zone.userName;
+    return "";
+};
+
 E.is_static_proxy = (zone_name, zones)=>{
     const zone = zones.find(z=>z.zone==zone_name);
     if (!zone)

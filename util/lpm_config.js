@@ -45,7 +45,7 @@ conf.server_default = {
     secure_proxy: false,
     short_username: false,
     ssl: false,
-    test_url: 'http://lumtest.com/myip.json',
+    test_url: 'http://allproxy.io/myip',
     proxy: conf.default_superproxy_domain,
     proxy_port: 22225,
     proxy_count: 1,

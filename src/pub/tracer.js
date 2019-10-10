@@ -160,7 +160,7 @@ class Result_row extends Pure_component {
 }
 
 const Request = with_proxy_ports(class Request extends Pure_component {
-    def_url = 'http://lumtest.com/myip.json';
+    def_url = 'http://allproxy.io/myip';
     state = {url: this.def_url, port: ''};
     url_changed = value=>this.setState({url: value});
     port_changed = port=>this.setState({port});

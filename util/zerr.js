@@ -318,7 +318,6 @@ E.zexit = function(args){
         E.flush();
     }
     /*jslint -W087*/
-    debugger;
     process.exit(1);
 };
 
