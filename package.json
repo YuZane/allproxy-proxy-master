@@ -34,7 +34,7 @@
       "artifactName": "${name}-${version}-setup.${ext}",
       "warningsAsErrors": false
     },
-    "productName": "Luminati Proxy Manager",
+    "productName": "Allproxy Manager",
     "publish": [
       {
         "provider": "generic",
@@ -162,8 +162,8 @@
     "npm": "4.6.1"
   },
   "homepage": "http://allproxy.io/",
-  "api_domain": "lum-lpm.com",
-  "mail_domain": "luminati-china-mail.co",
+  "api_domain": "allproxy.io",
+  "mail_domain": "allproxy.io",
   "keywords": [
     "luminati",
     "proxy",
@@ -414,6 +414,7 @@
   "scripts": {
     "electron": "electron .",
     "start": "electron ./src/pub/app.js",
+    "package": "electron-packager ./ myapp --out ./OutApp --version 1.7.9 --overwrite --icon=./app/img/icon/icon.ico",
     "debug": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server  --progress --colors",
     "debug2": "node dev-startup.js",
     "test": "./node_modules/mocha/bin/mocha",

@@ -119,11 +119,6 @@ const Nav_right = ()=>
 
 const Patent = ()=>
     <div className="patent_note">
-      Patent:
-      <a className="link" href="https://luminati.io/patent-marking"
-        rel="noopener noreferrer" target="_blank">
-        https://luminati.io/patent-marking
-      </a>
     </div>;
 
 const show_reload = function(){

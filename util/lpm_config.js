@@ -67,7 +67,7 @@ conf.server_default = {
 };
 conf.manager_default = Object
 .assign({}, _.omit(conf.server_default, 'port'), {
-    api: 'http://localhost:9081',
+    api: 'http://localhost:8091',
     www: 23999,
     www_whitelist_ips: [],
     whitelist_ips: [],

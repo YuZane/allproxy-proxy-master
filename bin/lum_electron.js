@@ -94,7 +94,7 @@ const check_conflicts = ()=>etask(function*(){
     let tasks;
     try { tasks = yield tasklist(); }
     catch(e){ process.exit(); }
-    tasks = tasks.filter(t=>t.imageName.includes('Luminati Proxy Manager') &&
+    tasks = tasks.filter(t=>t.imageName.includes('Allproxy Manager') &&
         t.pid!=process.pid);
     if (tasks.length<=2)
         return;
