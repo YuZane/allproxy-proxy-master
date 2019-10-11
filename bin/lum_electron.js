@@ -36,7 +36,7 @@ const mgr_err = msg=>{
 // fork child other path js process run
 const restart = ()=>{
     const child = child_process.spawn(process.execPath, process.argv.slice(1),
-        {detached: true, stdio: ['inherit', 'inherit', 'inherit', 'ipc']});
+        {detached: true,windowsHide:false, stdio: ['inherit', 'inherit', 'inherit', 'ipc']});
     // wait until child re-open stdio
     child.on('message', msg=>{
         if (!msg || msg.cmd!='lpm_restart_init')
@@ -129,7 +129,7 @@ const check_conflicts = ()=>etask(function*(){
 });
 
 const _run = argv=>etask(function*(){
-    zerr.notice('Running Luminati Proxy Manager v%s, PID: %s', pkg.version,
+    zerr.notice('Running Allproxy Master v%s, PID: %s', pkg.version,
         process.pid);
     yield check_conflicts();
     if (process.send)
@@ -183,6 +183,9 @@ let quit = err=>{
 };
 
 E.run = argv=>{
+    app.on('ready-to-show', ()=>_run(
+        app.show()
+    ));
     app.on('ready', ()=>_run(argv));
     process.on('SIGINT', quit);
     process.on('SIGTERM', quit);

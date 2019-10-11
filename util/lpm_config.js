@@ -24,7 +24,7 @@ const conf = {
     boolean_fields: prop_by_type(swagger.definitions.proxy.properties,
         'boolean'),
     credential_fields: qw`customer zone password token token_auth`,
-    default_superproxy_domain: 'zproxy.lum-superproxy.io',
+    default_superproxy_domain: 'localhost',
     hola_agent: 'proxy='+pkg.version+' node='+process.version
         +' platform='+process.platform,
 };
@@ -38,7 +38,7 @@ conf.server_default = {
     zone: 'static',
     customer: process.env.LUMINATI_CUSTOMER,
     password: process.env.LUMINATI_PASSWORD,
-    log: 'error',
+    log: 'any',
     pool_type: 'default',
     sticky_ip: false,
     insecure: false,
